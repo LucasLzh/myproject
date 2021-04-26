@@ -1,0 +1,104 @@
+#motor_img_bg{
+	width: 70%;
+	height: 300px;
+}
+
+#circle_div_bg{
+	position: relative;
+	height: 450px;
+	overflow: hidden;
+}
+
+.circle_div{
+	position: absolute;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+}
+/*------水平和垂直居中-------*/
+.circle_div p{
+	position: relative;
+	font-size: 14px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.circle_big{
+	width: 136px;
+	height: 136px;
+}
+
+.circle_mid{
+	width: 114px;
+	height: 114px;
+}
+
+.color_one{
+	background-color: rgba(241,235,252,0.80);
+}
+
+.color_two{
+	background-color: rgba(255,231,221,0.80);
+}
+/*-----设置为inline-block就可以在父元素中居中显示--*/
+.mid_icon_div_prt{
+	display: inline-block;
+	width: 15%;
+	margin: 0px 4%;
+}
+
+.mid_icon_div_prt img{
+	width: 40px;
+	height: 60px;
+}
+
+.mid_icon_div_prt p{
+	text-align:center;
+	font-size: 16px;
+	font-style: oblique;
+	margin-top: 10px;
+}
+
+.btn_motor_prt{
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	border-radius: 4px;
+	border: 1px solid #F0F0F0;
+	width: 95%;
+	height: 48px;
+	padding: 10px;
+	margin: 5px 5px 5px 0px;
+}
+
+.btn_motor_prt:hover{
+	background-color: #6D7278;
+	color: white;
+}
+
+/*屏幕可视窗口尺寸小于 800 像素*/
+@media screen and (max-width: 800px){
+	.circle_big{
+		width: 68px;
+		height: 68px;
+	}
+
+	.circle_mid{
+		width: 57px;
+		height: 57px;
+	}
+
+	.mid_icon_div_prt{
+		width: 30%;
+	}
+
+	.circle_div p{
+		font-size: 9px;
+	}
+}

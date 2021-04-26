@@ -1,0 +1,300 @@
+/*---禁止文字被选择----*/
+body{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+/* clear float */
+.clear{clear:both;}
+
+.nav_link_top{
+	background-image: linear-gradient(#6D7278,#6D7278);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-size: 0 3px;
+	transition: background-size 500ms ease-in-out;
+}
+
+.nav_link_top:hover{
+	background-size: 100% 3px;
+}
+
+.nav_link_top:visited{
+	background-size: 100% 3px;
+}
+
+.nav-item{
+	margin-right: 30px;
+}
+
+.navbar_menu {
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+.navbar_menu ul li {
+	float:right;
+	list-style:none;
+	text-decoration:none;
+}
+.navbar_menu ul li a {
+	display:block;
+	padding:10px;
+	text-decoration:none;
+}
+
+/*------轮播区-------*/
+.carousel-item{
+	background-color: #F2F2F2;
+	height: 478px;
+	position: relative;
+}
+
+.carousel_img{
+	position: absolute;
+	top: 20%;
+	left: 0px;
+	width: 43%;
+	height: 81%;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+.carousel_text{
+	position: absolute;
+	width: 40%;
+	height: 65%;
+	top: 34%;
+	left: 52%;
+}
+
+.caption_title{
+	font-size: 42px;
+	color: rgba(0,0,0,0.85);
+}
+
+.caption_content{
+	font-size: 18px;
+	color: rgba(0,0,0,0.85);
+}
+
+.caption_button{
+	background-color: #F2F2F2; 
+	color: #303030;
+	padding: 7px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	border-radius: 5px;
+	border: 1px solid #8CC238;
+}
+
+.caption_button:hover{
+	background-color: #303030;
+	color: white;
+}
+
+/*--------产品目录--------*/
+.product_bg{
+	background-repeat:no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.product_menu_tit{
+	position: absolute;
+	font-size: 24px;
+	font-weight: bold;
+	top: 13%;
+	z-index: 3;
+}
+
+.product_hide_url{
+	position: absolute;
+	height: 460px;
+	background-color: #FFCEC6B3;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transform: translate(0,0);
+	transition: opacity 1s;
+}
+
+.product_hide_url a{
+	font-size: 0.3em;
+	color: black;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.product_hide_url a:hover{
+	color: #303030;
+}
+/*--------产品滚动区----------*/
+.slide_area_tit{
+	font-size: 24px;
+	font-weight: bold;
+	font-style: oblique;
+	float: left;
+}
+
+.slide_area_url{
+	font-size: 14px;
+	color: #7E91AD;
+	text-decoration: none;
+	float: right;
+}
+
+.slide_area_url:hover{
+	color: #303030;
+	text-decoration: none;
+}
+
+.out_card_screen{
+	/*----以下这句话或许可以解决加载速度慢的问题-*/
+	-webkit-overflow-scrolling: touch;
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+}
+
+#in_card_pro_screen{
+	-webkit-overflow-scrolling: touch;
+	width: 3000px;
+	height: 250px;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+}
+
+.pruduct_card{
+	width: 220px;
+	height: 220px;
+	border-radius: 6px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+	overflow: hidden;
+	display: inline-block;
+	margin-right: 34px;
+}
+
+.pruduct_card_img{
+	width: 100%;
+	height: 63%;
+}
+
+.pruduct_card_text{
+	width: 100%;
+	height: 37%;
+	padding: 11% 11%;
+	text-align: center;
+}
+
+.product_card_icon{
+	float: left;
+	width: 11%;
+	height: 43%;
+	margin-right: 5px;
+}
+
+.pruduct_card_text span{
+	font-size: 14px;
+	color: rgba(0,0,0,0.85);
+}
+
+/*------控制系统滚动区域----*/
+#in_card_sys_screen{
+	width: 3000px;
+	height: 230px;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+}
+
+.control_sys_card{
+	width: 172px;
+	height: 220px;
+	border-radius: 6px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+	overflow: hidden;
+	display: inline-block;
+	margin-right: 34px;
+	text-align: center;
+}
+
+.control_sys_card_img{
+	margin:0 auto;
+	width: 100%;
+	height: 68%;
+	position: relative;
+}
+
+.control_sys_card_img img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.control_sys_card_text{
+	width: 100%;
+	height: 23%;
+	padding: 2% 0;
+	text-align: center;
+}
+
+.control_sys_card_text span{
+	font-size: 14px;
+	color: rgba(0,0,0,0.85);
+}
+
+.herizontalLine{
+	height:1px;
+	border:none;
+	border-top:1px solid #6D7278;
+}
+
+.light_gray_bg{
+	background-color: #F2F2F2;
+}
+
+/*屏幕可视窗口尺寸小于 600 像素*/
+@media screen and (max-width: 600px) {
+	.carousel_text{
+		top: 0;
+	}
+}
+/*屏幕可视窗口尺寸小于 540像素*/
+@media screen and (max-width: 540px) {
+	.navbar_menu {
+		right: 25%;
+	}
+
+	.carousel-item{
+		height: 400px;
+	}
+}
+
+/* 设备竖屏时*/
+/*@media all and (orientation : portrait){
+}*/
+
+/* 设备横屏时*/
+@media all and (orientation : landscape) and (max-width: 800px) {
+	.navbar_menu {
+		right: 15%;
+	}
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>这是一个注册页面</h1>
+    {{ message }}
+    <form action="/register/", method="post">
+        {% csrf_token %}
+        <div>
+            {{ registerForm.username.label_tag }}
+            {{ registerForm.username }}
+        </div>
+        <div>
+            {{ registerForm.email.label }}
+            {{ registerForm.email }}
+        </div>
+        <div>
+            {{ registerForm.sex.label_tag }}
+            {{ registerForm.sex }}
+        </div>
+        <div>
+            {{ registerForm.password1.label }}
+            {{ registerForm.password1 }}
+        </div>
+        <div>
+            {{ registerForm.password2.label }}
+            {{ registerForm.password2 }}
+        </div>
+        <div>
+            {{ registerForm.captcha.errors }}
+            {{ registerForm.captcha.label_tag }}
+            {{ registerForm.captcha }}
+        </div>
+        <button type="submit">递交注册</button>
+    </form>
+</body>
+</html>

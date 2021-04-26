@@ -1,0 +1,207 @@
+1   电机配对测试（需要按电机设置键或遥控器P2触发配对）   成功
+2   删除电机行程   成功
+3   电机设置上行程   成功
+4   电机设置下行程   成功
+5   电机上行   成功
+6   电机下行   成功
+7   电机百分比控制   成功
+8   电机上点动   成功
+9   电机下点动   成功
+10   电机第三行程点设置   成功
+11   电机第三行程点运行   成功
+12   电机第三行程点删除   成功
+13   电机运动过程中实时状态更新   成功
+14   电机内存读取   设备类型和选中的设备类型不符
+02000E0064B400070821010000000058
+0B444D32354C4555530200086400AF14
+C0
+
+0200444D32354C455553C00000000000
+59C00E0064B400000000000006590000
+模块软件版本：0002
+电机状态：待机,已上,已下,低功耗模式,不透传,停止,正常 
+电机当前位置：100% 180°
+角度系数：0
+转速：7
+电机当前电压：8.132
+电机速度等级：1
+点动距离系数：0
+第三行程点信息：未设置
+场景校验和：00
+电量百分比：88
+产品类型：0B
+产品名称：DM25LEUS
+电机软件版本：2.0
+工作电压：8.4
+电机负载：0.7
+电机转速：20
+电机行程信息：上已,下已,第三未,打开边界未,关闭边界未,反弹边界未
+电机的当前行程（霍尔）：
+电机的上行程点（霍尔）：
+电机的下行程点（霍尔）：
+电机的第三行程点（霍尔）：
+电机的打开边界：
+电机的关闭边界：
+电机的反弹边界：
+F8软件版本：2
+F8设备名称：DM25LEUS
+F8行程状态：C0
+F8预留：0000000000
+F9电机电量：89%
+F9行程状态：C0
+F9电机状态：待机,已上,已下,低功耗模式,不透传,停止,正常 
+F9当前位置：100% 180°
+F9第三行程点位置：未设置
+F9第四行程点位置：未设置
+F9第五行程点位置：未设置
+F9预留：06590000
+
+测试过程：
+[send]  【09:02:41 752】   !BR1D000*;
+[send]  【09:02:42 895】   !BR1D000*;
+[send]  【09:02:43 988】   !BR1D000*;
+[send]  【09:02:47 082】   !BR1D000%d;
+[receive]  【09:02:47 375】   !BR1D000%d;
+[send]  【09:02:49 410】   !BR1D000~01;
+[receive]  【09:02:49 493】   !BR1D000~01;
+[send]  【09:02:52 520】   !BR1D000&;
+[receive]  【09:02:52 853】   !BR1DI2XA;
+[receive]  【09:02:53 283】   !BR1DI2Xvd20;
+[send]  【09:03:00 020】   !BR1DI2XpEaC;
+[receive]  【09:03:00 215】   !BR1DI2XpEaC;
+[send]  【09:03:05 238】   !BR1DI2XpZ0120?;
+[receive]  【09:03:05 475】   !BR1DI2XpZ012000;
+[send]  【09:03:16 566】   !BR1DI2Xo;
+[receive]  【09:03:16 734】   !BR1DI2Xo;
+[send]  【09:03:26 785】   !BR1DI2Xs;
+[receive]  【09:03:26 954】   !BR1DI2Xs;
+[receive]  【09:03:27 053】   !BR1DI2XEnc;
+[send]  【09:03:32 004】   !BR1DI2XpEoH;
+[receive]  【09:03:32 171】   !BR1DI2XpEoH;
+[send]  【09:03:37 223】   !BR1DI2XpZ0120?;
+[receive]  【09:03:37 458】   !BR1DI2XpZ012080;
+[send]  【09:03:48 551】   !BR1DI2Xc;
+[receive]  【09:03:48 718】   !BR1DI2Xc;
+[send]  【09:03:58 770】   !BR1DI2Xs;
+[receive]  【09:03:58 931】   !BR1DI2Xs;
+[receive]  【09:03:59 039】   !BR1DI2XEnc;
+[send]  【09:04:04 004】   !BR1DI2XpEcH;
+[receive]  【09:04:04 168】   !BR1DI2XpEcH;
+[send]  【09:04:09 223】   !BR1DI2XpZ0120?;
+[receive]  【09:04:09 455】   !BR1DI2XpZ0120C0;
+[send]  【09:04:20 551】   !BR1DI2Xo;
+[receive]  【09:04:20 726】   !BR1DI2Xo;
+[receive]  【09:04:32 598】   !BR1DI2Xr000b000;
+[send]  【09:04:35 770】   !BR1DI2Xr?;
+[receive]  【09:04:36 327】   !BR1DI2Xr000b000;
+[send]  【09:04:47 426】   !BR1DI2Xc;
+[receive]  【09:04:47 588】   !BR1DI2Xc;
+[receive]  【09:04:59 522】   !BR1DI2Xr100b180;
+[send]  【09:05:02 645】   !BR1DI2Xr?;
+[receive]  【09:05:03 194】   !BR1DI2Xr100b180;
+[send]  【09:05:14 301】   !BR1DI2Xm050;
+[receive]  【09:05:14 467】   !BR1DI2Xm050;
+[receive]  【09:05:21 264】   !BR1DI2Xr050b000;
+[send]  【09:05:29 520】   !BR1DI2Xr?;
+[receive]  【09:05:29 771】   !BR1DI2Xr050b000;
+[send]  【09:05:40 848】   !BR1DI2Xr?;
+[receive]  【09:05:41 100】   !BR1DI2Xr050b000;
+[send]  【09:05:41 176】   !BR1DI2XoA;
+[receive]  【09:05:41 337】   !BR1DI2XoA;
+[receive]  【09:05:41 688】   !BR1DI2Xr049b000;
+[send]  【09:05:43 395】   !BR1DI2XoA;
+[receive]  【09:05:43 555】   !BR1DI2XoA;
+[receive]  【09:05:43 764】   !BR1DI2Xr048b000;
+[send]  【09:05:45 613】   !BR1DI2XoA;
+[receive]  【09:05:45 780】   !BR1DI2XoA;
+[receive]  【09:05:45 991】   !BR1DI2Xr047b000;
+[send]  【09:05:47 832】   !BR1DI2XoA;
+[receive]  【09:05:47 997】   !BR1DI2XoA;
+[receive]  【09:05:48 200】   !BR1DI2Xr046b000;
+[send]  【09:05:50 051】   !BR1DI2XoA;
+[receive]  【09:05:50 212】   !BR1DI2XoA;
+[receive]  【09:05:50 423】   !BR1DI2Xr045b000;
+[send]  【09:05:58 270】   !BR1DI2Xr?;
+[receive]  【09:05:58 523】   !BR1DI2Xr045b000;
+[send]  【09:05:58 598】   !BR1DI2XcA;
+[receive]  【09:05:58 759】   !BR1DI2XcA;
+[receive]  【09:05:59 021】   !BR1DI2Xr046b018;
+[send]  【09:06:00 817】   !BR1DI2XcA;
+[receive]  【09:06:00 978】   !BR1DI2XcA;
+[receive]  【09:06:01 191】   !BR1DI2Xr047b036;
+[send]  【09:06:03 035】   !BR1DI2XcA;
+[receive]  【09:06:03 197】   !BR1DI2XcA;
+[receive]  【09:06:03 416】   !BR1DI2Xr048b054;
+[send]  【09:06:05 254】   !BR1DI2XcA;
+[receive]  【09:06:05 413】   !BR1DI2XcA;
+[receive]  【09:06:05 635】   !BR1DI2Xr049b071;
+[send]  【09:06:07 473】   !BR1DI2XcA;
+[receive]  【09:06:07 636】   !BR1DI2XcA;
+[receive]  【09:06:07 844】   !BR1DI2Xr050b089;
+[send]  【09:06:15 691】   !BR1DI2Xm030;
+[receive]  【09:06:15 858】   !BR1DI2Xm030;
+[receive]  【09:06:19 631】   !BR1DI2Xr030b000;
+[send]  【09:06:30 910】   !BR1DI2XpEmH;
+[receive]  【09:06:31 073】   !BR1DI2XpEmH;
+[send]  【09:06:36 129】   !BR1DI2XpZ0120?;
+[receive]  【09:06:36 363】   !BR1DI2XpZ0120E0;
+[send]  【09:06:47 458】   !BR1DI2Xf;
+[receive]  【09:06:47 621】   !BR1DI2Xf;
+[send]  【09:07:02 676】   !BR1DI2Xr?;
+[receive]  【09:07:02 928】   !BR1DI2Xr030b000;
+[send]  【09:07:08 004】   !BR1DI2XpZ010C?;
+[receive]  【09:07:08 240】   !BR1DI2XpZ010C9E;
+[send]  【09:07:19 333】   !BR1DI2XpEmC;
+[receive]  【09:07:19 494】   !BR1DI2XpEmC;
+[send]  【09:07:24 551】   !BR1DI2XpZ0120?;
+[receive]  【09:07:24 778】   !BR1DI2XpZ0120C0;
+[send]  【09:07:35 879】   !BR1DI2Xo;
+[receive]  【09:07:36 045】   !BR1DI2Xo;
+[send]  【09:07:38 104】   !BR1DI2Xr?;
+[receive]  【09:07:38 342】   !BR1DI2Xr011b000;
+[send]  【09:07:40 103】   !BR1DI2Xr?;
+[receive]  【09:07:40 347】   !BR1DI2Xr002b000;
+[receive]  【09:07:40 825】   !BR1DI2Xr000b000;
+[send]  【09:07:42 101】   !BR1DI2Xr?;
+[receive]  【09:07:42 340】   !BR1DI2Xr000b000;
+[send]  【09:07:44 102】   !BR1DI2Xr?;
+[receive]  【09:07:44 346】   !BR1DI2Xr000b000;
+[send]  【09:07:46 103】   !BR1DI2Xr?;
+[receive]  【09:07:46 342】   !BR1DI2Xr000b000;
+[send]  【09:07:48 102】   !BR1DI2Xr?;
+[receive]  【09:07:48 343】   !BR1DI2Xr000b000;
+[send]  【09:07:50 102】   !BR1DI2Xr?;
+[receive]  【09:07:50 348】   !BR1DI2Xr000b000;
+[send]  【09:07:51 098】   !BR1DI2Xc;
+[receive]  【09:07:51 261】   !BR1DI2Xc;
+[send]  【09:07:52 100】   !BR1DI2Xr?;
+[receive]  【09:07:52 341】   !BR1DI2Xr010b175;
+[send]  【09:07:54 101】   !BR1DI2Xr?;
+[receive]  【09:07:54 343】   !BR1DI2Xr030b180;
+[send]  【09:07:56 102】   !BR1DI2Xr?;
+[receive]  【09:07:56 345】   !BR1DI2Xr049b180;
+[send]  【09:07:58 101】   !BR1DI2Xr?;
+[receive]  【09:07:58 342】   !BR1DI2Xr069b180;
+[send]  【09:08:00 100】   !BR1DI2Xr?;
+[receive]  【09:08:00 340】   !BR1DI2Xr088b180;
+[send]  【09:08:02 103】   !BR1DI2Xr?;
+[receive]  【09:08:02 340】   !BR1DI2Xr097b180;
+[receive]  【09:08:03 146】   !BR1DI2Xr100b180;
+[send]  【09:08:04 100】   !BR1DI2Xr?;
+[receive]  【09:08:04 342】   !BR1DI2Xr100b180;
+[send]  【09:08:06 119】   !BR1DI2Xr?;
+[receive]  【09:08:06 360】   !BR1DI2Xr100b180;
+[send]  【09:08:07 504】   !BR1DI2XpZ1000?;
+[receive]  【09:08:07 747】   !BR1DI2XpZ100002000E0064B400070821010000000058;
+[send]  【09:08:09 834】   !BR1DI2XpZ1010?;
+[receive]  【09:08:10 072】   !BR1DI2XpZ10100B444D32354C4555530200086400AF14;
+[send]  【09:08:12 165】   !BR1DI2XpZ0D20?;
+[receive]  【09:08:12 395】   !BR1DI2XpZ0120C0;
+[send]  【09:08:14 506】   !BR1DI2XpZ102D?;
+[send]  【09:08:15 598】   !BR1DI2XpZ102D?;
+[send]  【09:08:16 692】   !BR1DI2XpZ102D?;
+[send]  【09:08:19 786】   !BR1DI2XpZ10F8?;
+[receive]  【09:08:20 344】   !BR1DI2XpZ10F80200444D32354C455553C00000000000;
+[send]  【09:08:22 349】   !BR1DI2XpZ10F9?;
+[receive]  【09:08:22 595】   !BR1DI2XpZ10F959C00E0064B400000000000006590000;
+
